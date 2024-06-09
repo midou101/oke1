@@ -1,9 +1,4 @@
-RewriteEngine On
-
-# Redirect semua domain www ke https://sawtelghad.fm
-RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
-RewriteRule ^(.*)$ https://sawtelghad.fm/$1 [R=301,L]
-
-# Redirect semua path atau slug dari domain apa pun ke https://sawtelghad.fm
-RewriteEngine On
-RewriteRule ^(.*)$ https://sawtelghad.fm/ [R=301,L]
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^kubetdw.medcl.com [NC,OR]
+RewriteCond %{HTTP_HOST} ^www.kubetdw.medcl.com [NC]
+RewriteRule ^(.*)$ https://sawtelghad.fm/$1 [L,R=301,NC]
